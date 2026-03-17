@@ -48,14 +48,14 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="Calendar" size={14} className="text-primary flex-shrink-0" />
-                <span>2025 год</span>
+                <span>2026 год</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          © 2025 · МОУ «Разуменская СОШ №4 «Вектор Успеха» · Белгородский район, п. Разумное
+          © 2026 · МОУ «Разуменская СОШ №4 «Вектор Успеха» · Белгородский район, п. Разумное
         </div>
       </div>
     </footer>

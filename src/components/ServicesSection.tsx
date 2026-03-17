@@ -82,7 +82,7 @@ export function ServicesSection() {
             <CardContent className="p-6 text-center w-full">
               <Icon name="FileSearch" size={40} className="text-primary mx-auto mb-4" />
               <p className="text-lg font-bold text-foreground mb-2">Анкетирование</p>
-              <p className="text-sm text-muted-foreground">Исследование проведено в МОУ «Разуменская СОШ №4» среди учащихся старших классов в 2025 году</p>
+              <p className="text-sm text-muted-foreground">Исследование проведено в МОУ «Разуменская СОШ №4» среди учащихся старших классов в 2026 году</p>
             </CardContent>
           </Card>
         </div>

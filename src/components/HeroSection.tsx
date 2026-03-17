@@ -50,7 +50,7 @@ export function HeroSection() {
       <div className="container mx-auto text-center max-w-5xl relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in-up">
           <Icon name="GraduationCap" size={16} className="text-primary" />
-          <span className="text-sm font-semibold text-primary">Научно-исследовательский проект · 2025</span>
+          <span className="text-sm font-semibold text-primary">Научно-исследовательский проект · 2026</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 animate-fade-in-up leading-[1.1] text-balance">
@@ -92,7 +92,7 @@ export function HeroSection() {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: "1s" }} />
-            <span>Белгородский район, 2025</span>
+            <span>Белгородский район, 2026</span>
           </div>
         </div>
 

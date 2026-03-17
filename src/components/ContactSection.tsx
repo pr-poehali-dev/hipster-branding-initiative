@@ -17,7 +17,7 @@ export function ContactSection() {
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-sm text-primary font-medium">
             <Icon name="BookOpen" size={16} />
-            <span>Исследование выполнено в рамках школьной научно-практической конференции 2025 г.</span>
+            <span>Исследование выполнено в рамках школьной научно-практической конференции 2026 г.</span>
           </div>
         </div>
       </div>
