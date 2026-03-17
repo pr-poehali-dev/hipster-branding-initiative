@@ -1,4 +1,3 @@
-import { ThemeToggle } from "@/components/ThemeToggle"
 import { Logo } from "@/components/Logo"
 import { MobileMenu } from "@/components/MobileMenu"
 import { useState, useEffect } from "react"
@@ -27,25 +26,24 @@ export function Navbar() {
           </a>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">
-              О нас
+            <a href="#relevance" className="text-sm font-medium hover:text-primary transition-colors">
+              Актуальность
             </a>
-            <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">
-              Услуги
+            <a href="#results" className="text-sm font-medium hover:text-primary transition-colors">
+              Результаты
             </a>
-            <a href="#portfolio" className="text-sm font-medium hover:text-primary transition-colors">
-              Портфолио
+            <a href="#rules" className="text-sm font-medium hover:text-primary transition-colors">
+              Памятка
             </a>
-            <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
-              Тарифы
+            <a href="#checklist" className="text-sm font-medium hover:text-primary transition-colors">
+              Чек-лист
             </a>
-            <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
-              Контакты
+            <a href="#conclusion" className="text-sm font-medium hover:text-primary transition-colors">
+              Заключение
             </a>
           </div>
 
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             <MobileMenu />
           </div>
         </div>

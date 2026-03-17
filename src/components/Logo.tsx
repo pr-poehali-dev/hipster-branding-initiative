@@ -1,12 +1,13 @@
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
-      <div className="flex items-center gap-1">
-        {/* Pink angle brackets */}
-        <span className="text-2xl font-bold text-primary">&lt;</span>
-        <span className="text-2xl font-bold text-primary">&gt;</span>
-        {/* Brand text */}
-        <span className="text-xl font-semibold tracking-tight ml-1">CodeCraft</span>
+      <div className="flex items-center gap-2">
+        <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+          <span className="text-white text-sm font-bold">ВС</span>
+        </div>
+        <span className="text-base font-bold tracking-tight leading-tight">
+          <span className="text-primary">Вектор</span> Успеха
+        </span>
       </div>
     </div>
   )

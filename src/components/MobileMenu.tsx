@@ -7,11 +7,12 @@ export function MobileMenu() {
   const [open, setOpen] = useState(false)
 
   const menuItems = [
-    { href: "#about", label: "О нас" },
-    { href: "#services", label: "Услуги" },
-    { href: "#portfolio", label: "Портфолио" },
-    { href: "#pricing", label: "Тарифы" },
-    { href: "#contact", label: "Контакты" },
+    { href: "#relevance", label: "Актуальность" },
+    { href: "#results", label: "Результаты" },
+    { href: "#rules", label: "Памятка" },
+    { href: "#checklist", label: "Чек-лист" },
+    { href: "#conclusion", label: "Заключение" },
+    { href: "#contacts", label: "Контакты" },
   ]
 
   return (
@@ -24,8 +25,8 @@ export function MobileMenu() {
       </SheetTrigger>
       <SheetContent side="right" className="w-[280px] sm:w-[350px]">
         <SheetHeader>
-          <SheetTitle>Меню навигации</SheetTitle>
-          <SheetDescription>Переход к разделам сайта</SheetDescription>
+          <SheetTitle>Навигация</SheetTitle>
+          <SheetDescription>Разделы проекта</SheetDescription>
         </SheetHeader>
         <nav className="flex flex-col gap-1 mt-8">
           {menuItems.map((item) => (

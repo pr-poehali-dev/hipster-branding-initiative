@@ -1,94 +1,63 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
-const projects = [
-  {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
-    description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
-  },
-  {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
-    description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
-  },
-  {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
-    description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
-  },
-  {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
-    description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
-  },
-]
+import Icon from "@/components/ui/icon"
 
 export function PortfolioSection() {
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-7xl">
+    <section id="conclusion" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
+
+      <div className="container mx-auto max-w-4xl relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
-          </p>
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+            <Icon name="BookOpen" size={16} />
+            Итоги исследования
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-balance">
+            <span className="text-primary">Заключение</span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300"
-            >
-              <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <Button
-                    size="sm"
-                    variant="secondary"
-                    className="gap-2"
-                    onClick={() => window.open(project.url, "_blank")}
-                  >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
+        <div className="bg-card border border-border rounded-3xl p-8 md:p-12 shadow-xl">
+          <div className="flex justify-center mb-8">
+            <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Icon name="Globe" size={40} className="text-primary" />
+            </div>
+          </div>
+
+          <p className="text-lg md:text-xl text-foreground leading-relaxed text-center mb-8 font-medium">
+            Социальные сети — мощный инструмент, который может как{" "}
+            <span className="text-primary font-bold">развивать интерес к общественной жизни</span>, так и{" "}
+            <span className="text-rose-500 font-bold">манипулировать сознанием</span>. Главный риск — разрыв между
+            онлайн-активностью и реальными действиями.
+          </p>
+
+          <p className="text-base text-muted-foreground leading-relaxed text-center mb-10">
+            Важно научиться пользоваться соцсетями осознанно, и это задача не только подростков,
+            но и педагогов, и родителей.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-border">
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                <Icon name="Users" size={22} className="text-primary" />
               </div>
-              <CardContent className="p-6">
-                <p className="text-sm text-primary font-semibold mb-2">{project.category}</p>
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+              <p className="font-bold text-foreground">Подростки</p>
+              <p className="text-sm text-muted-foreground mt-1">учатся критическому мышлению</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mx-auto mb-3">
+                <Icon name="GraduationCap" size={22} className="text-accent" />
+              </div>
+              <p className="font-bold text-foreground">Педагоги</p>
+              <p className="text-sm text-muted-foreground mt-1">включают медиаграмотность в обучение</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                <Icon name="Home" size={22} className="text-primary" />
+              </div>
+              <p className="font-bold text-foreground">Родители</p>
+              <p className="text-sm text-muted-foreground mt-1">ведут открытый диалог с детьми</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
