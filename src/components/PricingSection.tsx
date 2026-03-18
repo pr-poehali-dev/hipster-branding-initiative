@@ -49,15 +49,7 @@ export function PricingSection() {
           </div>
         </div>
 
-        <div className="bg-card border border-border rounded-2xl p-8 text-center">
-          <div className="w-40 h-40 bg-muted/50 rounded-2xl flex flex-col items-center justify-center mx-auto mb-6 border-2 border-dashed border-border">
-            <Icon name="QrCode" size={48} className="text-muted-foreground/50 mb-2" />
-            <span className="text-xs text-muted-foreground">QR-код на полную версию проекта</span>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Отсканируй QR-код для доступа к полной версии исследования с приложениями и анкетами
-          </p>
-        </div>
+
       </div>
     </section>
   )
